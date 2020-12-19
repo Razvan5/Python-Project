@@ -1,0 +1,213 @@
+"""
+ONE_CRACK = 0
+
+TWO_CRACK = 1
+
+THREE_CRACK = 2
+
+FOUR_CRACK = 3
+
+FIVE_CRACK = 4
+
+SIX_CRACK = 5
+
+SEVEN_CRACK = 6
+
+EIGHT_CRACK = 7
+
+NINE_CRACK = 8
+
+ONE_DOT = 9
+
+TWO_DOT = 10
+
+THREE_DOT = 11
+
+FOUR_DOT = 12
+
+FIVE_DOT = 13
+
+SIX_DOT = 14
+
+SEVEN_DOT = 15
+
+EIGHT_DOT = 16
+
+NINE_DOT = 17
+
+
+ONE_BAM = 18
+
+TWO_BAM = 19
+
+THREE_BAM = 20
+
+FOUR_BAM = 21
+
+FIVE_BAM = 22
+
+SIX_BAM = 23
+
+SEVEN_BAM = 24
+
+EIGHT_BAM = 25
+
+NINE_BAM = 26
+
+
+EAST = 27
+
+SOUTH = 28
+
+WEST = 29
+
+NORTH = 30
+
+RED_DRAGON = 31
+
+GREEN_DRAGON = 32
+
+WHITE_DRAGON = 33
+
+BLUE_FLOWER = 34
+
+VIOLET_FLOWER = 35
+
+MAGENTA_FLOWER = 36
+
+CYAN_FLOWER = 37
+
+TILE_TYPE_MAX_NUMBER = 38
+
+
+# maximum screen width & height (in pixels)
+
+SCREEN_WIDTH, SCREEN_HEIGHT = (1536, 804)
+
+# makes the tile surface thinner (in pixels)
+
+TILE_SHORTENER = 0
+
+SELECTION_SHORTENER = 32
+
+SELECTION_COLOR = (255, 69, 0)
+
+# mahjong tiles pixel width & height (in pixels)
+
+# 132 and 172
+
+ZOOM_FACTOR = 0.55
+
+TILE_WIDTH, TILE_HEIGHT = (132 - TILE_SHORTENER, 172 - TILE_SHORTENER)
+
+TILE_GAP = 4
+
+SELECTION_WIDTH = int((TILE_WIDTH - SELECTION_SHORTENER)*ZOOM_FACTOR)
+
+SELECTION_HEIGHT = int((TILE_HEIGHT - SELECTION_SHORTENER)*ZOOM_FACTOR)
+
+SELECTION_BORDER_WIDTH = int(4*ZOOM_FACTOR)
+
+SELECTION_BORDER_RADIUS = int(10*ZOOM_FACTOR)
+
+
+TRANSPARENCY_COLOR = (255, 255, 255)
+
+
+GAME_FONT = 'fonts/Minecraft.ttf'
+
+GAME_FONT_COLOR = (250, 250, 250)
+
+GAME_FONT_SHADOW_COLOR = (50, 50, 50)
+
+GAME_FONT_SIZE = 48
+
+BACKGROUND_TEXTURE = 'images/backgrounds/normal/Elypsum.jpg'
+
+TILES_TEXTURES = 'images/tiles/normal/electroHD.png'
+
+CURSOR_TEXTURE = 'images/others/cursor.png'
+
+GAME_MUSIC = ['sounds/game_music.wav', 'sounds/retro_future.wav']
+
+FINISH_TEXT_1 = "Congratulations you won! Press any key to close!"
+
+SHUFFLE_TEXT = "Press S to shuffle board! No Combinations are possible!"
+
+VIOLET_COLOR = (183, 161, 197)
+
+"""
+ONE_CRACK = 0
+TWO_CRACK = 1
+THREE_CRACK = 2
+FOUR_CRACK = 3
+FIVE_CRACK = 4
+SIX_CRACK = 5
+SEVEN_CRACK = 6
+EIGHT_CRACK = 7
+NINE_CRACK = 8
+
+ONE_DOT = 9
+TWO_DOT = 10
+THREE_DOT = 11
+FOUR_DOT = 12
+FIVE_DOT = 13
+SIX_DOT = 14
+SEVEN_DOT = 15
+EIGHT_DOT = 16
+NINE_DOT = 17
+
+ONE_BAM = 18
+TWO_BAM = 19
+THREE_BAM = 20
+FOUR_BAM = 21
+FIVE_BAM = 22
+SIX_BAM = 23
+SEVEN_BAM = 24
+EIGHT_BAM = 25
+NINE_BAM = 26
+
+EAST = 27
+SOUTH = 28
+WEST = 29
+NORTH = 30
+
+RED_DRAGON = 31
+GREEN_DRAGON = 32
+WHITE_DRAGON = 33
+
+BLUE_FLOWER = 34
+VIOLET_FLOWER = 35
+MAGENTA_FLOWER = 36
+CYAN_FLOWER = 37
+TILE_TYPE_MAX_NUMBER = 38
+
+# maximum screen width & height (in pixels)
+SCREEN_WIDTH, SCREEN_HEIGHT = (1536, 804)
+# makes the tile surface thinner (in pixels)
+TILE_SHORTENER = 0
+SELECTION_SHORTENER = 32
+SELECTION_COLOR = (255, 69, 0)
+# mahjong tiles pixel width & height (in pixels)
+# 132 and 172
+ZOOM_FACTOR = 0.55
+TILE_WIDTH, TILE_HEIGHT = (132 - TILE_SHORTENER, 172 - TILE_SHORTENER)
+TILE_GAP = 4
+SELECTION_WIDTH = int((TILE_WIDTH - SELECTION_SHORTENER)*ZOOM_FACTOR)
+SELECTION_HEIGHT = int((TILE_HEIGHT - SELECTION_SHORTENER)*ZOOM_FACTOR)
+SELECTION_BORDER_WIDTH = int(4*ZOOM_FACTOR)
+SELECTION_BORDER_RADIUS = int(10*ZOOM_FACTOR)
+
+TRANSPARENCY_COLOR = (255, 255, 255)
+
+GAME_FONT = 'fonts/Minecraft.ttf'
+GAME_FONT_COLOR = (250, 250, 250)
+GAME_FONT_SHADOW_COLOR = (50, 50, 50)
+GAME_FONT_SIZE = 48
+BACKGROUND_TEXTURE = 'images/backgrounds/normal/Elypsum.jpg'
+TILES_TEXTURES = 'images/tiles/normal/electroHD.png'
+CURSOR_TEXTURE = 'images/others/cursor.png'
+GAME_MUSIC = ['sounds/game_music.wav', 'sounds/retro_future.wav']
+FINISH_TEXT_1 = "Congratulations you won! Press any key to close!"
+SHUFFLE_TEXT = "Press S to shuffle board! No Combinations are possible!"
+VIOLET_COLOR = (183, 161, 197)
