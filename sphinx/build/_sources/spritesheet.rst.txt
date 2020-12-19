@@ -1,0 +1,7 @@
+spritesheet module
+==================
+
+.. automodule:: spritesheet
+   :members:
+   :undoc-members:
+   :show-inheritance:

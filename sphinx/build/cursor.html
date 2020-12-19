@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cursor module &mdash; Mahjongg 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="initialize module" href="initialize.html" />
+    <link rel="prev" title="constants module" href="constants.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Mahjongg
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">MahjonggProject</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="constants.html">constants module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">cursor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="initialize.html">initialize module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spritesheet.html">spritesheet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tile.html">tile module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Mahjongg</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">MahjonggProject</a> &raquo;</li>
+        
+      <li>cursor module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cursor.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-cursor">
+<span id="cursor-module"></span><h1>cursor module<a class="headerlink" href="#module-cursor" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="cursor.Cursor">
+<em class="property">class </em><code class="sig-prename descclassname">cursor.</code><code class="sig-name descname">Cursor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sprite_path</span></em>, <em class="sig-param"><span class="n">mahjong_dictionary</span></em>, <em class="sig-param"><span class="n">screen</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cursor.Cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pygame.sprite.Sprite</span></code></p>
+<p>Class used for game logic, initializes a cursor object with a custom texture, memorizes the dictionary for easy
+tile manipulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sprite_path</strong> (<em>constant str</em>) – the relative path of the cursor image</p></li>
+<li><p><strong>mahjong_dictionary</strong> (<em>dict</em>) – the tile dictionary used for identifying, erasing, shuffling and matching tiles</p></li>
+<li><p><strong>screen</strong> (<em>pygame.display</em><em>(</em><em>)</em>) – the visible area where the game is performed</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="cursor.Cursor.check_game_state">
+<code class="sig-name descname">check_game_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cursor.Cursor.check_game_state" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns the state mahjong_dictionary is empty</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cursor.Cursor.check_tile_match">
+<code class="sig-name descname">check_tile_match</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selected_tile</span></em>, <em class="sig-param"><span class="n">tile_group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cursor.Cursor.check_tile_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if two tiles can be matched, highlights the first clicked tile and alters the screen and dictionary if it
+succeds</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>selected_tile</strong> (<a class="reference internal" href="tile.html#tile.Tile" title="tile.Tile"><em>tile.Tile</em></a><em>(</em><em>)</em>) – the currently selected tile</p></li>
+<li><p><strong>tile_group</strong> – all the rendered tiles</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cursor.Cursor.get_mahjong_dictionary">
+<code class="sig-name descname">get_mahjong_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cursor.Cursor.get_mahjong_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter used by the shuffle function in the main module</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a modified dictionary</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cursor.Cursor.select_tile">
+<code class="sig-name descname">select_tile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tile_group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cursor.Cursor.select_tile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method used for selecting 2 tiles, checking if they are compatible and returning the state of the game and plays
+different sounds for clicking and matching tiles</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tile_group</strong> (<em>pygame.sprite.Group</em><em>(</em><em>)</em>) – the tiles rendered on screen</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if the game can end</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cursor.Cursor.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cursor.Cursor.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides a method in the pygame.sprite.Sprite() class and changes the cursor sprite to be at the same position
+as the mouse cursor</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="cursor.is_tile_covered">
+<code class="sig-prename descclassname">cursor.</code><code class="sig-name descname">is_tile_covered</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selected_tile</span></em>, <em class="sig-param"><span class="n">tile_group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cursor.is_tile_covered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean decider if the tile is covered or not using the pygame.sprite.spritecollide()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>selected_tile</strong> – the tile selected by the player</p></li>
+<li><p><strong>tile_group</strong> – all the tiles on the screen</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if the tile is covered by another tile higher in level or not</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cursor.is_tile_surrounded">
+<code class="sig-prename descclassname">cursor.</code><code class="sig-name descname">is_tile_surrounded</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selected_tile</span></em>, <em class="sig-param"><span class="n">tile_group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cursor.is_tile_surrounded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean function returning if a tile is blocked by at least one tile from both directions, using two tile.Tile()
+objects that detect collisions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>selected_tile</strong> (<a class="reference internal" href="tile.html#tile.Tile" title="tile.Tile"><em>tile.Tile</em></a><em>(</em><em>)</em>) – the tile selected by the player</p></li>
+<li><p><strong>tile_group</strong> (<em>pygame.sprite.Group</em><em>(</em><em>)</em>) – all the tiles on the screen</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if the tile is locked on the left and right side and they are on the same layer</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cursor.select_highest_tile">
+<code class="sig-prename descclassname">cursor.</code><code class="sig-name descname">select_highest_tile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">collided_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cursor.select_highest_tile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Selects the tile with the highest layer number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collided_list</strong> (<em>list</em><em>(</em><a class="reference internal" href="tile.html#tile.Tile" title="tile.Tile"><em>tile.Tile</em></a><em>(</em><em>)</em><em>)</em>) – the list of tiles the cursor collided with when it clicked</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a tile</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="tile.html#tile.Tile" title="tile.Tile">tile.Tile</a>()</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="initialize.html" class="btn btn-neutral float-right" title="initialize module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="constants.html" class="btn btn-neutral float-left" title="constants module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Razvan Mocanu
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+MahjonggProject
+===============
+
+.. toctree::
+   :maxdepth: 4
+
+   constants
+   cursor
+   initialize
+   main
+   spritesheet
+   tile

@@ -1,0 +1,7 @@
+cursor module
+=============
+
+.. automodule:: cursor
+   :members:
+   :undoc-members:
+   :show-inheritance:
